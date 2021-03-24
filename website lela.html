@@ -1,0 +1,225 @@
+<! doytype html>
+<html> <head>
+	<style>
+		* {
+			padding:0;
+			margin:0;
+			font-family:'Quicksand' ,sans-serif;
+		}
+		header{
+			height:70px;
+			border:1px solid;
+			
+		}
+		header h1 {
+			border:1px solid;
+			 display:inline-block;
+			 float:left;
+			 padding:15px 24 px;
+			 text-transform:uppercase;
+
+		}
+		
+		header h1 a {
+			transition:.3s;
+		}
+		header h1 a:hover {
+			color:#f84744;
+		}
+
+		header ul{
+			
+			float :right;
+
+		}
+		header ul li {
+			
+			padding:24px; 
+			display :inline-block;
+		}
+		 header ul li a{
+		 	transition: .3s;
+		 }
+		header ul li a:hover{
+			color:#f84744;
+		}
+		.container{
+			width:90%;
+			margin:0 auto;
+			
+		}
+		.container::after{
+			content:'';
+			display:block;
+			clear:both;
+		}
+		.mobile-menu{
+			float:right;
+			display:none;
+			padding:24px
+		}
+		.mobile-menu:hover{
+			cursor:pointer;
+		}
+      #check {
+      	
+      	display:none;
+      }
+      .sidebar{
+      	position:fixed;
+      	top:0;
+      	bottom:0;
+      	left:-300px;
+      	width: 300px;
+      	background-color:rgba(16, 47, 80, .9);
+      }
+      .sidebar ul li a {
+      	color:white;
+      }
+      .sidebar ul li{
+      	padding:24px;
+      	transition: .3s;
+      	transition-property:background-color;
+
+      }
+      .sidebar ul li:hover{
+      	background-color: #f84744;
+      } 
+       #check:checked ~  .sidebar {
+      	left: 0;
+      }
+
+        @media (max-width:768px){
+			.mobile-menu{
+				display:block;
+			}
+			header ul{
+				display:none;
+			}
+
+		}
+		.gambar{
+       	width:30%;
+       	 display:grid;
+       	 grid-template-columns: 1fr  1fr 1fr;
+       	margin :auto; padding :15 px;
+
+       }
+       .gambar .foto img{
+       	width: 260px;
+       	
+       }
+    .foto {
+     border:4px solid black;
+     margin:15px; 
+     text-align:center;
+     margin-bottom:50px;
+     
+    }
+    .foto a{
+    	border:ipx solid green;
+    	padding:10px;
+    	color :white;
+    	background:green;
+    	text-decoration:none;
+    	border-radius:20px;
+    	cursor:pointer;
+    
+   
+    
+    .container { 
+     padding-top : 20 Px;
+  }
+
+     
+	</style>
+	
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial scale=1">
+<title>Nurlela Manalu</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<lin   href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
+
+<body>
+	<!--sidebar-->
+	<input type="checbox" id="check">
+	<div class="sidebar">
+		<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Skill</a></li>
+				<li><a href="">Forfolio</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</div>
+
+	<!---bagian header-->
+
+		<header > 
+			<div class="container">
+			<h1><a href=""> Nurlela Manalu</a></h1>
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Skill</a></li>
+				<li><a href="">Forfolio</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+			<!-- mobile-->
+			<label for="check" class="mobile-menu"> <i class="fa fa-bars  fa-2x" aria-hidden="true"></i> </label>
+		</div>
+
+			
+		</header>
+		</div>
+	
+	<div class="container">
+	   		<div class="header">
+	   			<h2 class=" Judul "> DUMB-Course</h2>
+	   			
+	   		</div>
+	   </div>
+
+</div>
+		<div class="gambar">
+
+			<div class=" foto">
+				<img src= "img/css.png"  width="300px" >
+		        <p>Menentukan layout, style, serta keselarasan halaman website.</p>
+		        <a href=""> Detail</a>    
+			</div> 
+					<div class=" foto">
+				    <img src= "img/javascript.png" width="300px">
+		             <p>Anda bisa mempelajari bahasa pemrograman ini dengan cepat dan mudah, serta menggunakannya untuk berbagai tujuan, mulai dari meningkatkan fungsionalitas website hingga mengaktifkan permainan dan software berbasis web. Selain itu, terdapat ribuan template dan aplikasi JavaScript yang bisa Anda gunakan secara gratis dan semuanya ini berkat beberapa situs, seperti Github.</p>
+		        <a href=""> Detail </a>
+			      </div>
+
+			               <div class=" foto">
+				            <img src= "img/html.png" width="300px">
+		                     <p>  HTML adalah singkatan dari HyperText Markup Language yaitu bahasa pemrograman standar yang digunakan untuk membuat sebuah halaman web, yang kemudian dapat diakses untuk menampilkan berbagai informasi di dalam sebuah penjelajah web Internet (Browser). HTML dapat juga digunakan sebagai link link antara file-file dalam situs atau dalam komputer dengan menggunakan localhost, atau link yang menghubungkan antar situs dalam dunia internet. </p>
+		                      <a href=""> Detail </a>
+			                  </div>
+			                  		<div class=" foto">
+				                   <img src= "img/php.jpg" width="300px">
+		                            <p> engertian PHP, PHP Adalah bahasa scripting server-side, Bahasa pemrograman yang digunakan untuk mengembangkan situs web statis atau situs web dinamis atau aplikasi Web. PHP singkatan dari Hypertext Pre-processor, yang sebelumnya disebut Personal Home Pages. </p>
+		       						 <a href=""> Detail </a>
+										</div>
+			                    	
+											<div class=" foto">
+				                            <img src= "img/lavarel.jpg" width="300px">
+		                                    <p> Laravel adalah framework aplikasi web kontemporer, open source dan digunakan secara luas untuk perancangan aplikasi web yang cepat dan mudah </p>
+		       						        <a href=""> Detail </a>
+										    </div>
+										     <div class=" foto">
+				                               <img src= "img/node.png" width="300px">
+		                                        <p> node.js adalah perangkat lunak yang didesain untuk mengembangkan aplikasi berbasis web dan ditulis dalam sintaks bahasa pemrograman JavaScrip </p>
+		       						               <a href=""> Detail </a>
+										            </div>
+		</div>
+		
+</body>
+	
+</html>
